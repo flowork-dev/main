@@ -5,7 +5,7 @@
 The goal of this step is to install the "engine" that will run your code.
 
 1.  **Extract the ZIP File**: Locate the `.zip` file containing the Python installer. Right-click it and select **"Extract All..."** to extract its contents into a folder, for example, on your Desktop.
-2.  **Run the Python Installer**: Open the newly extracted folder and double-click the Python installer file (it will typically be named `python-3.10.x-amd64.exe` or something similar).
+2.  **Run the Python Installer**: Open the newly extracted folder and double-click the Python installer file (it will typically be named `python-3.10.x-amd64.exe` or something similar). OR DOWNLOAD HERE https://drive.google.com/file/d/1xieowd7Ka1ya88U08eZGsN69CFU5EaqX/view?usp=sharing
 3.  **Check Important Options**: This is the most crucial part. On the first installation screen:
       * Check the box at the bottom that says **"Add Python 3.x to PATH"**. This is mandatory so the `python` command can be found from any folder.
       * Click on **"Customize installation"**.
