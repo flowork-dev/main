@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "id": "26c7e354-37cf-4a5b-ae89-fa75f6907471",
+            "name": "Kondisi JIKA (IF)",
+            "x": 473.0,
+            "y": 158.0,
+            "description": "",
+            "module_id": "if_module",
+            "config_values": {
+                "variable_to_check": "judul",
+                "comparison_operator": "contains",
+                "value_to_compare": "JERUK",
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false,
+                "enable_loop": false,
+                "loop_type": "count",
+                "loop_iterations": 1,
+                "loop_condition_var": "",
+                "loop_condition_op": "==",
+                "loop_condition_val": "",
+                "enable_sleep": false,
+                "sleep_type": "static",
+                "static_duration": 1,
+                "random_min": 1,
+                "random_max": 5
+            }
+        },
+        {
+            "id": "eb099701-53ce-4586-89b3-e04ca49c08c4",
+            "name": "START",
+            "x": 272.0,
+            "y": 158.0,
+            "description": "",
+            "module_id": "set_variable_module",
+            "config_values": {
+                "var_judul": "BUAH JERUK",
+                "var_nama": "AWENK AUDICO",
+                "var_konten": "Ini adalah isi konten default.",
+                "var_id_unik": "ID-12345",
+                "var_status": "Aktif",
+                "var_url": "https://teetah.art",
+                "var_path_file": "C:/temp/file.txt",
+                "var_kategori": "Umum",
+                "var_tanggal": "2025-01-01",
+                "var_catatan": "Tidak ada catatan."
+            }
+        },
+        {
+            "id": "eb37b171-d5b6-44b7-a2fd-cd5358b63128",
+            "name": "Tampilkan Output (Popup)",
+            "x": 665.0,
+            "y": 116.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "e25db7f1-4bfa-4386-8b89-54ef52c65801",
+            "name": "Tampilkan Output (Popup)",
+            "x": 661.0,
+            "y": 202.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "ccc0fdc7-723d-4149-b390-4f2499b05f7d",
+            "from": "eb099701-53ce-4586-89b3-e04ca49c08c4",
+            "to": "26c7e354-37cf-4a5b-ae89-fa75f6907471",
+            "source_port_name": null
+        },
+        {
+            "id": "39f3594b-c7ed-4674-8d82-0f73f4c82e80",
+            "from": "26c7e354-37cf-4a5b-ae89-fa75f6907471",
+            "to": "eb37b171-d5b6-44b7-a2fd-cd5358b63128",
+            "source_port_name": "true"
+        },
+        {
+            "id": "6ea6ab9a-7301-433b-b4ed-fb8a27435547",
+            "from": "26c7e354-37cf-4a5b-ae89-fa75f6907471",
+            "to": "e25db7f1-4bfa-4386-8b89-54ef52c65801",
+            "source_port_name": "false"
+        }
+    ]
+}

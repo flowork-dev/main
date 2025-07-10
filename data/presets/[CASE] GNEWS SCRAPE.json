@@ -1,0 +1,52 @@
+{
+    "nodes": [
+        {
+            "id": "7dba6329-5180-4c54-9beb-ec721185cbaf",
+            "name": "Google News Fetcher",
+            "x": 168.0,
+            "y": 137.0,
+            "description": "",
+            "module_id": "google_news_fetcher",
+            "config_values": {
+                "language": "id",
+                "country": "ID",
+                "keywords": "kpk\njaksa\njokowi\nprabowo\ngibran\npolisi\npolitik\nkriminal\npemerkosaan\nperampokan\nbitcoin\ncrypto\nisrael\niran\namerika\nperang\nmotogp",
+                "output_keyword": true,
+                "output_title": true,
+                "output_url": true,
+                "output_source": true,
+                "output_published": true,
+                "output_summary": true,
+                "ignore_history": false
+            }
+        },
+        {
+            "id": "43a1dd80-223b-4912-9784-304b7cc63b56",
+            "name": "Article Content Scraper (Auto-Detect)",
+            "x": 365.0,
+            "y": 135.0,
+            "description": "",
+            "module_id": "article_scraper",
+            "config_values": {
+                "url_key_path": "latest_article.original_url",
+                "enable_paragraph_filter": true,
+                "min_paragraphs": 5,
+                "enable_image_filter": false,
+                "min_image_width": 300,
+                "min_image_height": 600,
+                "enable_cleaning": true,
+                "unwanted_words": "advertiser, iklan, ads, berita, baca juga",
+                "enable_saving": true,
+                "save_path": "C:/Users/User/Desktop/New folder"
+            }
+        }
+    ],
+    "connections": [
+        {
+            "id": "6b7ed76a-f9c9-458c-9ffb-1151af235356",
+            "from": "7dba6329-5180-4c54-9beb-ec721185cbaf",
+            "to": "43a1dd80-223b-4912-9784-304b7cc63b56",
+            "source_port_name": null
+        }
+    ]
+}

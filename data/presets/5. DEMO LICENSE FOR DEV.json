@@ -1,0 +1,16 @@
+{
+    "nodes": [
+        {
+            "id": "9cd3f9e2-15b1-4512-8999-919f69bf354e",
+            "name": "Tampilkan Variabel (DEMO)",
+            "x": 761.0,
+            "y": 376.0,
+            "description": "",
+            "module_id": "tampilkan_variabel_demo",
+            "config_values": {
+                "variabel_target": "COBA"
+            }
+        }
+    ],
+    "connections": []
+}

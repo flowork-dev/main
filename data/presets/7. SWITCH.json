@@ -1,0 +1,142 @@
+{
+    "nodes": [
+        {
+            "id": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "name": "Logika SWITCH (Pilihan Ganda)",
+            "x": 584.0,
+            "y": 252.0,
+            "description": "",
+            "module_id": "switch_module",
+            "config_values": {
+                "input_variable": "judul",
+                "cases": [
+                    {
+                        "operator": "contains",
+                        "compare_value": "APEL"
+                    },
+                    {
+                        "operator": "contains",
+                        "compare_value": "JERUK"
+                    },
+                    {
+                        "operator": "contains",
+                        "compare_value": "ANGUR"
+                    },
+                    {
+                        "operator": "not contains",
+                        "compare_value": "MELON"
+                    }
+                ],
+                "default_output": true,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "0e89bbcc-920a-41dd-ac02-06c297d68bff",
+            "name": "START",
+            "x": 364.0,
+            "y": 288.0,
+            "description": "",
+            "module_id": "set_variable_module",
+            "config_values": {
+                "var_judul": "BUAH APEL",
+                "var_nama": "AWENK AUDICO",
+                "var_konten": "Ini adalah isi konten default.",
+                "var_id_unik": "ID-12345",
+                "var_status": "Aktif",
+                "var_url": "https://teetah.art",
+                "var_path_file": "C:/temp/file.txt",
+                "var_kategori": "Umum",
+                "var_tanggal": "2025-01-01",
+                "var_catatan": "Tidak ada catatan."
+            }
+        },
+        {
+            "id": "43e65cb9-efdc-401e-b69a-c39441868e25",
+            "name": "Tampilkan Output (Popup)",
+            "x": 935.0,
+            "y": 134.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "b7dc00b3-3251-43b6-84a4-659c64d0f6b6",
+            "name": "Tampilkan Output (Popup)",
+            "x": 934.0,
+            "y": 209.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "2388394f-fce3-41cc-9173-27d6c620e69b",
+            "name": "Tampilkan Output (Popup)",
+            "x": 935.0,
+            "y": 276.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "8f9898ae-2ac4-4836-a040-2e4a907a7640",
+            "name": "Tampilkan Output (Popup)",
+            "x": 935.0,
+            "y": 356.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "dda859d5-0836-46f8-b09a-b5e7a5c677a0",
+            "name": "Tampilkan Output (Popup)",
+            "x": 941.0,
+            "y": 449.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "e2ffc948-8dfe-4eff-b2a5-f47507b013ab",
+            "from": "0e89bbcc-920a-41dd-ac02-06c297d68bff",
+            "to": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "source_port_name": null
+        },
+        {
+            "id": "48d549da-909c-4b15-8883-230e9ca174e1",
+            "from": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "to": "43e65cb9-efdc-401e-b69a-c39441868e25",
+            "source_port_name": "APEL"
+        },
+        {
+            "id": "e71835fa-a8f4-4cdb-9f2f-3de8f1a293ff",
+            "from": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "to": "b7dc00b3-3251-43b6-84a4-659c64d0f6b6",
+            "source_port_name": "JERUK"
+        },
+        {
+            "id": "c78c55b7-739c-43d1-a896-c4f0cb301279",
+            "from": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "to": "2388394f-fce3-41cc-9173-27d6c620e69b",
+            "source_port_name": "ANGUR"
+        },
+        {
+            "id": "4d2501d0-54c2-41ca-bef1-3c911f1b2de8",
+            "from": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "to": "8f9898ae-2ac4-4836-a040-2e4a907a7640",
+            "source_port_name": "MELON"
+        },
+        {
+            "id": "620de6c6-a1f6-4cff-b13f-7dcf5ce03e0a",
+            "from": "76993955-a77f-4b77-a0ad-58552a9c80cb",
+            "to": "dda859d5-0836-46f8-b09a-b5e7a5c677a0",
+            "source_port_name": "Default"
+        }
+    ]
+}

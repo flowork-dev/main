@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "id": "7293da99-1890-40d3-baaa-be7b69963a2d",
+            "name": "A/B ROTATOR",
+            "x": 554.0,
+            "y": 221.0,
+            "description": "",
+            "module_id": "ab_router_module",
+            "config_values": {
+                "routing_variants": [
+                    {
+                        "name": "1.TEST HTTP REQUEST",
+                        "percentage": 50
+                    },
+                    {
+                        "name": "3.JOINT",
+                        "percentage": 50
+                    }
+                ],
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false,
+                "enable_loop": true,
+                "loop_type": "count",
+                "loop_iterations": 4,
+                "loop_condition_var": "",
+                "loop_condition_op": "==",
+                "loop_condition_val": "",
+                "enable_sleep": false,
+                "sleep_type": "static",
+                "static_duration": 1,
+                "random_min": 1,
+                "random_max": 5
+            }
+        }
+    ],
+    "connections": []
+}

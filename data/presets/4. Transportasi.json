@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "id": "ec9e226a-e7a5-4e13-811e-64759d3c7a03",
+            "name": "RECEIVER",
+            "x": 610.0,
+            "y": 235.0,
+            "description": "",
+            "module_id": "receiver_module",
+            "config_values": {}
+        },
+        {
+            "id": "49bcc711-733a-4611-b0f0-73c27df50263",
+            "name": "SENDER",
+            "x": 493.0,
+            "y": 237.0,
+            "description": "",
+            "module_id": "sender_module",
+            "config_values": {
+                "receiver_id": "ec9e226a-e7a5-4e13-811e-64759d3c7a03"
+            }
+        },
+        {
+            "id": "1590a310-ba47-4925-9333-84f2f3c84c7c",
+            "name": "START",
+            "x": 287.0,
+            "y": 239.0,
+            "description": "",
+            "module_id": "set_variable_module",
+            "config_values": {}
+        },
+        {
+            "id": "c120a99e-d4d0-400a-a92d-11f0dc2a869b",
+            "name": "Tampilkan Output (Popup)",
+            "x": 782.0,
+            "y": 234.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "a6811528-ee49-4b91-b068-a3d84b3c444c",
+            "from": "ec9e226a-e7a5-4e13-811e-64759d3c7a03",
+            "to": "c120a99e-d4d0-400a-a92d-11f0dc2a869b",
+            "source_port_name": null
+        },
+        {
+            "id": "a77b7258-0ee8-428a-91fe-2d837a25d808",
+            "from": "1590a310-ba47-4925-9333-84f2f3c84c7c",
+            "to": "49bcc711-733a-4611-b0f0-73c27df50263",
+            "source_port_name": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "nodes": [
+        {
+            "id": "edcf8db7-cf9d-4364-82c6-ed0426a81ca7",
+            "name": "Google News Fetcher",
+            "x": 316.0,
+            "y": 199.0,
+            "description": "",
+            "module_id": "google_news_fetcher",
+            "config_values": {
+                "language": "id",
+                "country": "ID",
+                "keywords": "jokowi\nprabowo\ngibran",
+                "ignore_history": false
+            }
+        },
+        {
+            "id": "9c23dd22-4d36-4255-9810-0c350f103b10",
+            "name": "Tampilkan Output (Popup)",
+            "x": 713.0,
+            "y": 204.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "7759cc8f-6c03-4b91-a151-249f9feb5aaf",
+            "from": "edcf8db7-cf9d-4364-82c6-ed0426a81ca7",
+            "to": "9c23dd22-4d36-4255-9810-0c350f103b10",
+            "source_port_name": null
+        }
+    ]
+}

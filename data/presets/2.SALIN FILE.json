@@ -1,0 +1,70 @@
+{
+    "nodes": [
+        {
+            "id": "518e87ba-c756-4526-b724-1079079d2759",
+            "name": "Buat Folder",
+            "x": 390.0,
+            "y": 205.0,
+            "description": "",
+            "module_id": "create_folder_module",
+            "config_values": {
+                "target_path": "C:\\Users\\User\\Desktop\\BACKUP",
+                "create_parents": true,
+                "enable_loop": false,
+                "loop_type": "count",
+                "loop_iterations": 1,
+                "loop_condition_var": "",
+                "loop_condition_op": "==",
+                "loop_condition_val": "",
+                "enable_sleep": false,
+                "sleep_type": "static",
+                "static_duration": 1,
+                "random_min": 1,
+                "random_max": 5,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "6f45de69-f089-40e7-a653-019408bab242",
+            "name": "Salin File",
+            "x": 541.0,
+            "y": 201.0,
+            "description": "",
+            "module_id": "copy_file_module",
+            "config_values": {
+                "copy_mode": "folder",
+                "source_path": "C:/Users/User/Desktop/FLOWORK/flowork_kernel",
+                "destination_path": "C:/Users/User/Desktop/BACKUP",
+                "overwrite": true,
+                "enable_loop": false,
+                "loop_type": "count",
+                "loop_iterations": 1,
+                "loop_condition_var": "",
+                "loop_condition_op": "==",
+                "loop_condition_val": "",
+                "enable_sleep": false,
+                "sleep_type": "static",
+                "static_duration": 1,
+                "random_min": 1,
+                "random_max": 5,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        }
+    ],
+    "connections": [
+        {
+            "id": "55f99fe2-9e86-4c73-8303-84557385164a",
+            "from": "518e87ba-c756-4526-b724-1079079d2759",
+            "to": "6f45de69-f089-40e7-a653-019408bab242",
+            "source_port_name": null
+        }
+    ]
+}

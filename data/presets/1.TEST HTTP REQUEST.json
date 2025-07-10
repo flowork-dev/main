@@ -1,0 +1,44 @@
+{
+    "nodes": [
+        {
+            "id": "96f1239c-2be4-4fc2-a5a3-23e46ae00dd5",
+            "name": "HTTP Request",
+            "x": 323.0,
+            "y": 305.0,
+            "description": "",
+            "module_id": "http_request_module",
+            "config_values": {
+                "url": "https://api.github.com/users/octocat",
+                "method": "GET",
+                "headers": "{\n    \"Content-Type\": \"application/json\"\n}",
+                "body": "",
+                "auth_type": "none",
+                "bearer_token": "",
+                "basic_user": "",
+                "basic_pass": "",
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "1dc29118-a206-43d6-b72f-d2937e7c8663",
+            "name": "Tampilkan Output (Popup)",
+            "x": 545.0,
+            "y": 303.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "b1535b20-4e4b-4fe6-b1e1-99c8d5debadd",
+            "from": "96f1239c-2be4-4fc2-a5a3-23e46ae00dd5",
+            "to": "1dc29118-a206-43d6-b72f-d2937e7c8663",
+            "source_port_name": null
+        }
+    ]
+}

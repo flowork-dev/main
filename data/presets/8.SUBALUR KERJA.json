@@ -1,0 +1,24 @@
+{
+    "nodes": [
+        {
+            "id": "61301ab7-6f5f-4f49-82d7-902325baa9aa",
+            "name": "Sub Alur Kerja",
+            "x": 677.0,
+            "y": 213.0,
+            "description": "",
+            "module_id": "sub_workflow_module",
+            "config_values": {
+                "execution_order": [
+                    "1.TEST HTTP REQUEST",
+                    "2.SALIN FILE",
+                    "3.JOINT",
+                    "4. Transportasi",
+                    "5. DEMO LICENSE FOR DEV",
+                    "6 - IFELSE",
+                    "7. SWITCH"
+                ]
+            }
+        }
+    ],
+    "connections": []
+}

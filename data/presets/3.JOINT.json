@@ -1,0 +1,181 @@
+{
+    "nodes": [
+        {
+            "id": "4a3bb3bb-0306-4bb9-b30a-0e2e228a0fe4",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1092.0,
+            "y": 249.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "663899c8-6dcc-45e1-a77d-93bf234587bf",
+            "name": "Jeda (Sleep)",
+            "x": 513.0,
+            "y": 138.0,
+            "description": "",
+            "module_id": "sleep_module",
+            "config_values": {
+                "sleep_type": "random_range",
+                "duration_seconds": 1,
+                "random_min": 1,
+                "random_max": 10,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "d2a3ccca-d84a-4a46-9aac-6b0c4f2b9a4f",
+            "name": "Jeda (Sleep)",
+            "x": 502.0,
+            "y": 255.0,
+            "description": "",
+            "module_id": "sleep_module",
+            "config_values": {
+                "sleep_type": "random_range",
+                "duration_seconds": 2,
+                "random_min": 1,
+                "random_max": 10,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "7d876cba-847b-4dae-9c0a-c739ef30197c",
+            "name": "Jeda (Sleep)",
+            "x": 507.0,
+            "y": 374.0,
+            "description": "",
+            "module_id": "sleep_module",
+            "config_values": {
+                "sleep_type": "random_range",
+                "duration_seconds": 6,
+                "random_min": 1,
+                "random_max": 10,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "8491b5cf-47d0-4147-abc0-f294050eb164",
+            "name": "Join (Gabung)",
+            "x": 780.0,
+            "y": 247.0,
+            "description": "",
+            "module_id": "join_module",
+            "config_values": {
+                "expected_inputs": 3,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "81dc8338-46fe-464f-82f4-fa326ffe32c1",
+            "name": "DUMMY VARIABLE",
+            "x": 248.0,
+            "y": 145.0,
+            "description": "",
+            "module_id": "DUMMY_VARIABLE",
+            "config_values": {
+                "variable_name": "NAMA",
+                "variable_value": "TOYIB",
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "eccd3f81-b7f9-443e-88a1-dafdd7dec0e2",
+            "name": "DUMMY VARIABLE",
+            "x": 249.0,
+            "y": 271.0,
+            "description": "",
+            "module_id": "DUMMY_VARIABLE",
+            "config_values": {
+                "variable_name": "KELAS",
+                "variable_value": "1C",
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "504054f7-de71-4790-8341-b8479306641f",
+            "name": "DUMMY VARIABLE",
+            "x": 246.0,
+            "y": 389.0,
+            "description": "",
+            "module_id": "DUMMY_VARIABLE",
+            "config_values": {
+                "variable_name": "ALAMAT",
+                "variable_value": "TEGAL",
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        }
+    ],
+    "connections": [
+        {
+            "id": "346918a9-f676-4d7e-b698-a45b66da99b2",
+            "from": "663899c8-6dcc-45e1-a77d-93bf234587bf",
+            "to": "8491b5cf-47d0-4147-abc0-f294050eb164",
+            "source_port_name": null
+        },
+        {
+            "id": "977b7233-aa3b-432b-a0af-bde1d4ca3ed1",
+            "from": "d2a3ccca-d84a-4a46-9aac-6b0c4f2b9a4f",
+            "to": "8491b5cf-47d0-4147-abc0-f294050eb164",
+            "source_port_name": null
+        },
+        {
+            "id": "5f5dbcbd-c051-46dc-8f61-50368dbc058e",
+            "from": "7d876cba-847b-4dae-9c0a-c739ef30197c",
+            "to": "8491b5cf-47d0-4147-abc0-f294050eb164",
+            "source_port_name": null
+        },
+        {
+            "id": "bae05386-7e43-4d6c-8371-cf3ff2bb7bb0",
+            "from": "8491b5cf-47d0-4147-abc0-f294050eb164",
+            "to": "4a3bb3bb-0306-4bb9-b30a-0e2e228a0fe4",
+            "source_port_name": "output"
+        },
+        {
+            "id": "2d465ea8-c6e3-44f7-ac50-34cd5121648d",
+            "from": "81dc8338-46fe-464f-82f4-fa326ffe32c1",
+            "to": "663899c8-6dcc-45e1-a77d-93bf234587bf",
+            "source_port_name": "output"
+        },
+        {
+            "id": "3a903a38-c8dd-4050-a9e5-baa464009fc8",
+            "from": "eccd3f81-b7f9-443e-88a1-dafdd7dec0e2",
+            "to": "d2a3ccca-d84a-4a46-9aac-6b0c4f2b9a4f",
+            "source_port_name": "output"
+        },
+        {
+            "id": "0d48a201-181d-41c6-9291-14b60379aa4b",
+            "from": "504054f7-de71-4790-8341-b8479306641f",
+            "to": "7d876cba-847b-4dae-9c0a-c739ef30197c",
+            "source_port_name": "output"
+        }
+    ]
+}

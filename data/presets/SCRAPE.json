@@ -1,0 +1,58 @@
+{
+    "nodes": [
+        {
+            "id": "edcf8db7-cf9d-4364-82c6-ed0426a81ca7",
+            "name": "Google News Fetcher",
+            "x": 435.0,
+            "y": 316.0,
+            "description": "",
+            "module_id": "google_news_fetcher",
+            "config_values": {
+                "language": "id",
+                "country": "ID",
+                "keywords": "jokowi\nprabowo\ngibran\nkpk\nkorupsi\nkriminal\nperampokan\npembunuhan\nartis",
+                "output_keyword": true,
+                "output_title": true,
+                "output_url": true,
+                "output_source": true,
+                "output_published": true,
+                "output_summary": true,
+                "ignore_history": false
+            }
+        },
+        {
+            "id": "770c9115-3e7b-4832-85c5-9691f3281cbc",
+            "name": "Article Content Scraper (Auto-Detect)",
+            "x": 654.0,
+            "y": 312.0,
+            "description": "",
+            "module_id": "article_scraper",
+            "config_values": {
+                "url_key_path": "latest_article.original_url"
+            }
+        },
+        {
+            "id": "103baee4-c3d3-4ec5-be20-df212936863f",
+            "name": "Tampilkan Output (Popup)",
+            "x": 939.0,
+            "y": 315.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "1054046b-bd9b-454f-8ed9-74c2af5d1fae",
+            "from": "edcf8db7-cf9d-4364-82c6-ed0426a81ca7",
+            "to": "770c9115-3e7b-4832-85c5-9691f3281cbc",
+            "source_port_name": null
+        },
+        {
+            "id": "69afedbb-b5f9-4e4a-a819-f241a46ec48b",
+            "from": "770c9115-3e7b-4832-85c5-9691f3281cbc",
+            "to": "103baee4-c3d3-4ec5-be20-df212936863f",
+            "source_port_name": null
+        }
+    ]
+}
